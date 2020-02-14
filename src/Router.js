@@ -9,7 +9,6 @@ import Login from './components/Login'
 // Write checkAuth function here
 // Check the cookies for a cookie called "loggedIn"
 const checkAuth = () => {
-    document.cookie = "loggedIn=true;max-age=60*1000";
     const cookies = cookie.parse(document.cookie)
     return cookies["loggedIn"] ? true : false
 }
